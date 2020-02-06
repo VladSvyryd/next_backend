@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "pages",
+  "info": {
+    "name": "Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "path": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "richtext"
+    },
+    "picture": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "input": {
+      "type": "dynamiczone",
+      "components": [
+        "jj.f"
+      ]
+    }
+  }
+}
